@@ -1,0 +1,17 @@
+{
+  "translation": {
+    "about": "Hakkımda",
+    "contact": "İletişim",
+    "greeting": "Merhaba, ben Bekir ÜN",
+    "intro": "Elektrik Elektronik Mühendisliği öğrencisi ve tutkulu bir yazılım geliştirici.",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "about_me_title": "Hakkımda",
+    "about_me_text": "Bilgisayarlar küçüklüğümden beri en büyük tutkum oldu. Elektrik Elektronik Mühendisliği eğitimimle birlikte bu tutkuyu, yazılım alanında somut projelere dönüştürmeye odaklandım. Web geliştirme, backend sistemleri, mobil uygulamalar ve siber güvenlik gibi çeşitli alanlarda kendimi geliştiriyor, sürekli yeni teknolojiler öğrenmekten keyif alıyorum.",
+    "technologies_title": "Kullandığım Teknolojiler",
+    "contact_title": "İletişim",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "copyright": "© 2025 Bekir Ün. Tüm hakları saklıdır."
+  }
+}
