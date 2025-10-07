@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import TechCard from './components/TechCard';
 import { FaGithub, FaLinkedin, FaNodeJs, FaBars, FaTimes, FaSun, FaMoon } from 'react-icons/fa';
 import { DiReact } from 'react-icons/di';
@@ -17,28 +17,22 @@ function App() {
     return false;
   });
 
-  useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    }
-  }, [isDarkMode]);
-
   const toggleTheme = () => {
-    setIsDarkMode(prevMode => !prevMode);
+    setIsDarkMode(prevMode => {
+      const newMode = !prevMode;
+      localStorage.setItem('theme', newMode ? 'dark' : 'light');
+      return newMode;
+    });
   };
 
   return (
-    <div className="font-sans text-slate-800 dark:text-slate-200">
+    <div className={`min-h-screen bg-white dark:bg-slate-900 font-sans text-slate-800 dark:text-slate-200 ${isDarkMode ? "dark" : ""}`}>
       {/* Header */}
       <header className="sticky top-0 bg-white dark:bg-slate-900 shadow-sm z-10">
         <nav className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <a href="#home" className="text-2xl font-bold text-slate-900 dark:text-white">Bekir Ün</a>
-            
+
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-4 text-lg">
               <a href="#about" className="font-semibold text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Hakkımda</a>
