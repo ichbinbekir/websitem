@@ -1,3 +1,30 @@
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-background-light: #ffffff;
+  --color-background-dark: oklch(20.8% .042 265.755);
+  --color-text-light: oklch(27.9% .041 260.031);
+  --color-text-dark: oklch(92.9% .013 255.508);
+  --color-text-muted-light: oklch(44.6% .043 257.281);
+  --color-text-muted-dark: oklch(86.9% .022 252.894);
+  --color-text-strong-light: oklch(20.8% .042 265.755);
+  --color-text-strong-dark: #ffffff;
+  --color-primary-light: oklch(54.6% .245 262.881);
+  --color-primary-dark: oklch(70.7% .165 254.624);
+  --color-primary-background-light: oklch(27.9% .041 260.031);
+  --color-primary-background-dark: oklch(37.2% .044 257.287);
+  --color-secondary-background-light: oklch(48.8% .243 264.376);
+  --color-secondary-background-dark: oklch(48.8% .243 264.376);
+  --color-border-light: #ffffff;
+  --color-border-dark: oklch(27.9% .041 260.031);
+  --color-card-background-light: #ffffff;
+  --color-card-background-dark: rgba(29, 41, 61, 0.5);
+  --color-icon-react: oklch(68.5% .169 237.323);
+  --color-icon-nodejs: oklch(72.3% .219 149.579);
+  --color-icon-typescript: oklch(54.6% .245 262.881);
+  --color-icon-go: oklch(71.5% .143 215.221);
+  --color-icon-postgresql: oklch(62.3% .214 259.815);
+  --color-icon-tailwindcss: oklch(71.5% .143 215.221);
+}
