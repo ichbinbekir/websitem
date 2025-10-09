@@ -98,7 +98,7 @@ function App() {
             </div>
           </div>
           <div className="flex-shrink-0">
-            <img src="/profile-photo.png" alt="Profile photo" className="w-60 h-60 md:w-72 md:h-72 rounded-full object-cover shadow-2xl border-4 border-border-light dark:border-primary-background-light" />
+            <img src="/profile-photo.png" alt="Bekir Ün" className="w-60 h-60 md:w-72 md:h-72 rounded-full object-cover shadow-2xl border-4 border-border-light dark:border-primary-background-light" />
           </div>
         </section>
 
